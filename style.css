@@ -1,0 +1,21 @@
+.container {
+    padding: 1rem;
+}
+
+.grid {
+    display: grid;
+    max-width: 500px;
+    min-height: 500px;
+    margin: 2rem auto;
+    border: 2px solid var(--border);
+}
+
+.grid-element {
+    border: 1px solid var(--border);
+    background-color: var(--background);
+}
+
+.grid {
+    max-width: 300px;
+    min-height: 300px;
+  }
