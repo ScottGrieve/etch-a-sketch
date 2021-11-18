@@ -2,7 +2,7 @@ const gridContainer = document.querySelector("#grid-container");
 const resetButton = document.querySelector("#reset-button");
 
 window.addEventListener("load", setDefaultGrid);
-resetButton.addEventListener("click", changeSize);
+resetButton.addEventListener("click", clearGrid);
 
 function setDefaultGrid() {
     setGridSize(16);
@@ -28,7 +28,7 @@ function changeColor(e) {
     e.target.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`;
 }
 
-function changeSize() {
+/* function changeSize() {
     let newSize = prompt("enter new size");
 
     if (newSize !== null) {
@@ -40,6 +40,7 @@ function changeSize() {
         fillGrid(newSize);
     }
 }
+*/
 
 function clearGrid() {
     const gridArray = Array.from(gridContainer.childNodes);
